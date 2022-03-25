@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="DC-8靶机渗透#靶机描述​    DC-8 是另一个特意建造的易受攻击的实验室，旨在获得渗透测试领域的经验。​    这个挑战有点混合实际挑战和“概念证明”，即在 Linux 上安装和配置的双因素身份验证是否可以防止 Linux 服务器被利用。​    这个挑战的“概念证明”部分最终是由于 Twitter 上关于双因素身份验证和 Linux 的问题，以及@theart42 的建议。​    此挑">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/1.png">
+<meta property="og:image" content="c:/Users/13057/AppData/Roaming/Typora/typora-user-images/image-20220325155143215.png">
 <meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/10.png">
 <meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/11.png">
 <meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/12.png">
@@ -53,10 +53,10 @@
 <meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/28.png">
 <meta property="og:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/29.png">
 <meta property="article:published_time" content="2022-03-25T07:31:21.000Z">
-<meta property="article:modified_time" content="2022-03-25T07:45:34.321Z">
+<meta property="article:modified_time" content="2022-03-25T07:51:58.053Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="d:/jingyuan/baidu/Ting/3460/HTB/DC-8/1.png">
+<meta name="twitter:image" content="c:/Users/13057/AppData/Roaming/Typora/typora-user-images/image-20220325155143215.png">
   
   
   <title>DC-8靶机渗透 - Hexo</title>
@@ -277,7 +277,7 @@
 <h2 id="信息收集"><a href="#信息收集" class="headerlink" title="#信息收集"></a>#信息收集</h2><h3 id="主机探测"><a href="#主机探测" class="headerlink" title="#主机探测"></a>#主机探测</h3><p>发现开启了22和80端口</p>
 <figure class="highlight apache"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs apache"><span class="hljs-attribute">nmap</span> -sN <span class="hljs-number">192.168.1.0</span>/<span class="hljs-number">24</span><br></code></pre></div></td></tr></table></figure>
 
-<p><img src="D:\jingyuan\baidu\Ting\3460\HTB\DC-8\1.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="C:\Users\13057\AppData\Roaming\Typora\typora-user-images\image-20220325155143215.png" srcset="/img/loading.gif" lazyload alt="image-20220325155143215"></p>
 <h3 id="web探测"><a href="#web探测" class="headerlink" title="#web探测"></a>#web探测</h3><p>访问：<a target="_blank" rel="noopener" href="http://192.168.1.107,发现是drupal7的cms,之前是有注入和rce的漏洞来的,直接msf查一下对应的漏洞情况/">http://192.168.1.107，发现是Drupal7的cms，之前是有注入和RCE的漏洞来的，直接msf查一下对应的漏洞情况</a></p>
 <p><img src="D:\jingyuan\baidu\Ting\3460\HTB\DC-8\10.png" srcset="/img/loading.gif" lazyload></p>
 <figure class="highlight excel"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs excel">msf6 &gt; <span class="hljs-built_in">search</span> drupal<br></code></pre></div></td></tr></table></figure>
